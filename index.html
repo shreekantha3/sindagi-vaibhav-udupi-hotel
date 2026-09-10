@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaibhav Udupi Hotel — Food</title>
+  <meta name="description" content="Vaibhav Udupi Hotel — Restaurant in Sindagi, Karnataka. Rating: 4.0 ( reviews)." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: "#f59e0b",
+              light: "#fffbeb",
+              dark: "#78350f",
+            }
+          },
+          fontFamily: {
+            sans: ['system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .anim-fade-up { animation: fadeUp 0.8s ease-out both; }
+    .anim-fade-in { animation: fadeIn 1s ease-out both; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .dark .glass-card {
+      background: rgba(17, 24, 39, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-amber-50 to-orange-100 min-h-screen text-slate-800 font-sans antialiased selection:bg-brand selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-card shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="assets/logo.svg" alt="Logo" class="w-10 h-10 rounded-xl shadow-md group-hover:scale-105 transition-transform" />
+        <span class="font-bold text-lg tracking-tight text-slate-900">Vaibhav Udupi Hotel</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-brand transition-colors">About</a>
+        <a href="#services" class="hover:text-brand transition-colors">Services</a>
+        <a href="#contact" class="hover:text-brand transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-28 pb-16 px-6">
+    <div class="max-w-5xl mx-auto space-y-16">
+
+      <!-- Hero -->
+      <section class="anim-fade-in text-center md:text-left md:flex md:items-end md:justify-between gap-8">
+        <div class="flex-1">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-brand/10 text-brand-dark mb-4">Restaurant — Food</span>
+          <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-4 leading-[1.1]">
+            Vaibhav Udupi Hotel
+          </h1>
+          <p class="text-xl text-slate-600 mb-6 max-w-2xl">Serving Sindagi with quality and trust. Rated <span class="font-bold text-brand">4.0 ★</span> across <span class="font-semibold"></span> reviews.</p>
+          <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-brand text-white font-semibold shadow-lg shadow-brand/30 hover:shadow-xl hover:-translate-y-0.5 transition-all">Get in touch</a>
+        </div>
+        <div class="hidden md:block shrink-0">
+          <div class="w-40 h-40 rounded-full bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center shadow-2xl shadow-brand/20">
+            <img src="assets/logo.svg" alt="Logo" class="w-20 h-20 rounded-2xl shadow-lg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Cards -->
+      <section id="about" class="anim-fade-up grid md:grid-cols-3 gap-6">
+        <div class="glass-card rounded-3xl p-8 shadow-xl shadow-black/5 hover:-translate-y-1 transition-transform">
+          <h3 class="text-sm font-bold uppercase tracking-widest text-brand-dark mb-3">Location</h3>
+          <p class="text-slate-700 leading-relaxed">W68M+4VF, Old SBI Rd, Sindagi, Karnataka 586128, India</p>
+          <p class="text-slate-500 text-sm mt-1">Sindagi, Karnataka — 586128</p>
+        </div>
+        <div class="glass-card rounded-3xl p-8 shadow-xl shadow-black/5 hover:-translate-y-1 transition-transform">
+          <h3 class="text-sm font-bold uppercase tracking-widest text-brand-dark mb-3">Contact</h3>
+          <p class="text-slate-700 leading-relaxed">Phone: <a href="tel:" class="text-brand hover:underline"></a></p>
+          <p class="text-slate-500 text-sm mt-1">Reach out for inquiries and bookings.</p>
+        </div>
+        <div class="glass-card rounded-3xl p-8 shadow-xl shadow-black/5 hover:-translate-y-1 transition-transform">
+          <h3 class="text-sm font-bold uppercase tracking-widest text-brand-dark mb-3">Opportunity</h3>
+          <p class="text-5xl font-extrabold text-brand mb-1">65</p>
+          <p class="text-slate-500 text-sm">Website opportunity score. Priority: <span class="font-semibold text-brand-dark">High</span></p>
+        </div>
+      </section>
+
+      <!-- Services / Features -->
+      <section id="services" class="anim-fade-up">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">What we offer</h2>
+        <p class="text-slate-500 mb-8">A glimpse of our services and commitment to the community.</p>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="glass-card rounded-3xl p-8 shadow-xl shadow-black/5 hover:-translate-y-1 transition-transform">
+            <div class="w-12 h-12 rounded-2xl bg-brand/10 flex items-center justify-center mb-4">
+              <span class="text-2xl">★</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Top Rated Service</h3>
+            <p class="text-slate-600 leading-relaxed">Consistently rated <span class="font-bold text-brand">4.0 ★</span> by customers, reflecting quality and satisfaction.</p>
+          </div>
+          <div class="glass-card rounded-3xl p-8 shadow-xl shadow-black/5 hover:-translate-y-1 transition-transform">
+            <div class="w-12 h-12 rounded-2xl bg-brand/10 flex items-center justify-center mb-4">
+              <span class="text-2xl">📍</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Local Presence</h3>
+            <p class="text-slate-600 leading-relaxed">Located at W68M+4VF, Old SBI Rd, Sindagi, Karnataka 586128, India — easy to find and accessible for everyone in Sindagi.</p>
+          </div>
+          <div class="glass-card rounded-3xl p-8 shadow-xl shadow-black/5 hover:-translate-y-1 transition-transform md:col-span-2">
+            <h3 class="text-xl font-bold text-slate-900 mb-2">About Vaibhav Udupi Hotel</h3>
+            <p class="text-slate-600 leading-relaxed">Restaurant serving the Sindagi community. Whether you're a regular or a first-time visitor, we strive to deliver an experience that matches our rating. Find us on <a href="https://www.google.com/maps/search/?api=1&query=Vaibhav%20Udupi%20Hotel%2C%20Sindagi%2C%20Karnataka%20586128" target="_blank" class="text-brand hover:underline font-medium">Google Maps</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map / Contact -->
+      <section id="contact" class="anim-fade-up">
+        <div class="glass-card rounded-3xl p-8 md:p-10 shadow-xl shadow-black/5">
+          <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Find us</h2>
+          <p class="text-slate-600 mb-6">Visit us at our location in Sindagi. We're here to serve you.</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Vaibhav%20Udupi%20Hotel%2C%20Sindagi%2C%20Karnataka%20586128" target="_blank" class="inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-brand text-white font-semibold shadow-lg shadow-brand/30 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+            <span>🗺️</span>
+            <span>Open on Google Maps</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center text-slate-400 text-sm pt-8 border-t border-slate-200/60">
+        <p>© Vaibhav Udupi Hotel — Built with modern design. <a href="https://github.com" class="hover:text-brand">GitHub Pages Ready</a>.</p>
+      </footer>
+
+    </div>
+  </main>
+</body>
+</html>
